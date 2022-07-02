@@ -137,3 +137,42 @@ sim(pattern1, pattern2) > 阈值， 那么pattern1和pattern2 会归到同一个
 ```
 python Snowball.py parameters.cfg ./corpus/sentences.txt ./corpus/seeds_positive.txt ./corpus/seeds_negative.txt 0.6 0.6
 ```
+
+
+## 6. 实验结果(部分)
+在本人的语料中（语料不能公开），结果精准率约为91%（人工抽样验证）；
+
+```
+instance: 狂犬病	狂犬病病毒感染	 score:0.09701501354609915
+sentence: <DIS>狂犬病</DIS> 是 一种 有 <DIS>狂犬病病毒感染</DIS> 引起 的 <DIS>急性传染病</DIS> ， 也 是 现在 世界 上 致死率 最高 的 <DIS>传染病</DIS> 之一
+pattern_bet:  是 一种 
+
+instance: 类风湿	自身免疫性疾病	 score:0.08391098070410352
+sentence: <DIS>类风湿</DIS> 是 一种 <DIS>自身免疫性疾病</DIS> ， 不 只 可 引起 <DIS>关节病</DIS> 变 ， 同时 对 组织 及 身体 其它 器官 也 可 造成 不可 程度 的 危害 ， 因此 当 患上 <DIS>类风湿</DIS> 时 ， 要 及时 治疗 ， 同时 注意 做好 相关 的 <MED>护理</MED> 工作 ， 如 在 饮食 上 ， <DIS>类风湿</DIS> 患者 要 注意 合理 选择 食物 ， 多 吃 一些 有利 食物 ， 以 帮助 缓解 症状
+pattern_bet:  是 一种 
+
+instance: 骨质疏松症	骨骼慢性疾病	 score:0.005739479400272667
+sentence: <DIS>骨质疏松症</DIS> 是 最 常见 的 <DIS>骨骼慢性疾病</DIS>
+pattern_bet:  ， 是 最 常见 的 
+
+instance: 灰指甲	甲真菌病	 score:0.01
+sentence: <DIS>灰指甲</DIS> ， 也 称 <DIS>甲真菌病</DIS> ， 是 <BOD>指甲</BOD> 最常患 的 疾病 ， 占 <DIS>指甲病</DIS> 的 一半 以上
+pattern_bet:  ， 也 称 
+
+
+instance: 月经失调	月经不调	 score:0.01
+sentence: <DIS>月经失调</DIS> 也 称 <DIS>月经不调</DIS> ， 是 妇科 常见疾病 ， 表现 为 月经周期 或 <SYM>出血</SYM> 量 的 异常 ， 可伴 月经 前 、 经期 时 的 <SYM>腹痛</SYM> 及 全身 症状
+pattern_bet:  ， 也 称 
+
+instance: 狂犬病	恐水病	 score:0.10160113364224838
+sentence: <DIS>狂犬病</DIS> 的 典型 临床表现 为 <DIS>恐水症</DIS> ， 故 <DIS>狂犬病</DIS> 又称 <DIS>恐水病</DIS>
+pattern_bet:  ， 又称 ,  又称 
+
+instance: 房颤	心律失常	 score:0.1679828582189843
+sentence: <DIS>心房颤动</DIS> ， 简称 <DIS>房颤</DIS> ， 是 临床 上 常见 的 <DIS>心律失常</DIS>
+pattern_bet:  ， 是 临床 上 常见 的 
+
+instance: 排卵障碍	不排卵	 score:0.19877128633481048
+sentence: <DIS>排卵障碍</DIS> ， 又 称为 <DIS>不排卵</DIS> ， 是 女性 不孕症 的 主要 原因 之一 ， 约 占 25% ～ 30%
+pattern_bet:  ， 又 可以 称为 ,  ， 又 被 称为 
+```
