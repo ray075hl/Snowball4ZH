@@ -141,6 +141,9 @@ python Snowball.py parameters.cfg ./corpus/sentences.txt ./corpus/seeds_positive
 
 ## 6. 实验结果(部分)
 在本人的语料中（语料不能公开），结果精准率约为91%（人工抽样验证）；
+instance： **挖掘出来的关系对**
+sentence： **关系来源的出处**
+pattern_bet： **算法生成的模板中的between部分**
 
 ```
 instance: 狂犬病	狂犬病病毒感染	 score:0.09701501354609915
