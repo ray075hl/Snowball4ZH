@@ -127,7 +127,7 @@ sim(pattern1, pattern2) > 阈值， 那么pattern1和pattern2 会归到同一个
 英文版本地址：https://github.com/davidsbatista/Snowball
 
 ## 5. 其它
-数据输入的格式： 可以参考如下样例数据
+数据输入的格式： 可以参考如下样例数据, 后处理ner的结果，采用jieba分词，再以空格符合并
 ```
 <SYM>精神</SYM> 科 专家 指出 ， <DIS>脑卒中</DIS> 就是 俗称 的 <DIS>中风</DIS> ， 是 老年人 <DIS>脑血管常见病</DIS> ， 会 影响 老年人 的 行动 、 语言 沟通 能力 、 思维 等
 <DIS>痤疮</DIS> ， 俗称 <DIS>青春痘</DIS> 的 发病 原因
@@ -135,5 +135,5 @@ sim(pattern1, pattern2) > 阈值， 那么pattern1和pattern2 会归到同一个
 
 运行：
 ```
-python Snowball.py parameters.cfg corpus.txt seeds_positive.txt seeds_negative.txt 0.6 0.6
+python Snowball.py parameters.cfg ./corpus/sentences.txt ./corpus/seeds_positive.txt ./corpus/seeds_negative.txt 0.6 0.6
 ```
