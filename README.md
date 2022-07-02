@@ -1,5 +1,6 @@
 # Snowball4ZH
-适用于中文的半监督开放关系提取方法：[Snowball: Extracting Relations from Large Plain-Text Collections](http://www.cs.columbia.edu/~gravano/Papers/2000/dl00.pdf)
+适用于中文的半监督开放关系提取方法。
+原文是2000年左右的一篇[Snowball: Extracting Relations from Large Plain-Text Collections](http://www.cs.columbia.edu/~gravano/Papers/2000/dl00.pdf)， 思路比较有意思，稍作改动感觉也适用于中文(实验结果在最后的段落)。
 
 Readme可以当作是对这篇文章的简单解读。
 
