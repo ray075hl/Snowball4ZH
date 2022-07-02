@@ -159,7 +159,6 @@ instance: 灰指甲	甲真菌病	 score:0.01
 sentence: <DIS>灰指甲</DIS> ， 也 称 <DIS>甲真菌病</DIS> ， 是 <BOD>指甲</BOD> 最常患 的 疾病 ， 占 <DIS>指甲病</DIS> 的 一半 以上
 pattern_bet:  ， 也 称 
 
-
 instance: 月经失调	月经不调	 score:0.01
 sentence: <DIS>月经失调</DIS> 也 称 <DIS>月经不调</DIS> ， 是 妇科 常见疾病 ， 表现 为 月经周期 或 <SYM>出血</SYM> 量 的 异常 ， 可伴 月经 前 、 经期 时 的 <SYM>腹痛</SYM> 及 全身 症状
 pattern_bet:  ， 也 称 
